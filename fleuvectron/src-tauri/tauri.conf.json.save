@@ -1,0 +1,66 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "fleuvectron",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "title": "fleuvectron",
+        "width": 800,
+        "height": 600,
+        "label": "main",
+        "url" :"index.html"
+      }
+      
+    ],
+    "menu":[
+      {
+        "label":"Pages",
+        "submenu" : [
+          {
+            "label" : "HOME",
+            "id" : "home"
+          },
+          {
+            "label" : "settings",
+            "id" : "set"
+          },
+          {
+            "label" : "about",
+            "id" : "abt"
+          }
+
+        ]
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.dev",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    }
+  }
+}

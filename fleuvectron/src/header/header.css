@@ -1,0 +1,17 @@
+/* Add to App.css or create a separate CSS file for PageHeader */
+
+.page-header {
+  display: flex;
+  align-items: center;
+ 
+  background-color: #333;
+  color: white;
+  justify-content: center;
+}
+
+
+
+.page-title {
+  margin: 10;
+  font-size: 24px;
+}

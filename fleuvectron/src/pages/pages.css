@@ -1,0 +1,147 @@
+
+
+.page-container {
+  padding: 100px;
+}
+
+.page-nav {
+  margin-bottom: 20px;
+}
+
+.page-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.page-nav li {
+  display: inline;
+}
+
+.page-nav a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.page-nav a:hover {
+  background-color: #f0f0f0;
+}
+
+.back-link {
+  display: block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.back-link:hover {
+  background-color: #f0f0f0;
+}
+
+.resistor-calculator {
+  text-align: center;
+}
+
+.resistor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 300px;
+  height: 50px;
+  background-color: lightgray;
+  border-radius: 5px;
+  position: relative;
+}
+
+.band {
+  width: 20px;
+  height: 50px;
+  margin: 0 7px;
+}
+
+.color-selector {
+  margin: 20px 0;
+}
+
+.color-selector div {
+  margin: 10px 0;
+}
+
+.color-selector label {
+  margin-right: 10px;
+}
+
+.color-selector select {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  width: 50px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: var(--calculator-bg);
+  text-align: center;
+  font-size: 16px;
+  transition: border-color 0.3s, background-color 0.3s;
+  color: var(--background-color);
+  margin: auto;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  background-color: #6e6e6e;
+  outline: none;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.calculate-button {
+  
+  margin-top: 35px; /* Adjust the value as needed */
+  transition: border-color 0.3s, background-color 0.3s;
+  will-change: filter;
+  transition: 0.75s;
+}
+.calculate-button:hover{
+  filter: drop-shadow(0 0 2em #555);
+}
+
+/* New styles for the third page image */
+.third-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  
+  padding: 20px;
+}
+
+.third-page-image {
+  width: 150%;
+  max-width: 1100px; /* Limit the max width for readability */
+  height: auto;
+  object-fit: contain;
+}
